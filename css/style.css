@@ -104,26 +104,28 @@ header { background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: stic
 .team-social a:hover { color: #007bff; }
 
 /* Футер */
-footer { background: #222; color: #ccc; padding: 40px 0; margin-top: 60px; }
-.footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-.footer-section h4 { color: #fff; margin-bottom: 15px; font-size: 18px; }
-.footer-section h4 i { margin-right: 8px; color: #007bff; }
-.footer-section ul li { margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+footer { background: #1a1a2e; color: #ccc; padding: 50px 0 20px; margin-top: 60px; }
+.footer-content { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-bottom: 30px; }
+.footer-section h4 { color: #fff; margin-bottom: 20px; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+.footer-section h4 i { color: #007bff; font-size: 20px; }
+.footer-section ul li { margin-bottom: 12px; display: flex; align-items: center; gap: 10px; color: #aaa; }
 .footer-section ul li i { color: #007bff; width: 20px; }
-.footer-section p { line-height: 1.6; }
+.footer-section p { line-height: 1.6; color: #aaa; margin-bottom: 15px; }
 
-/* Соцсети */
-.social-links { display: flex; gap: 10px; margin-top: 15px; }
-.social-icon { width: 40px; height: 40px; background: #007bff; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: 0.3s; font-size: 18px; }
-.social-icon:hover { background: #0056b3; transform: translateY(-3px); }
+/* Соцсети в футере */
+.social-links { display: flex; gap: 12px; margin-top: 15px; }
+.social-icon { width: 42px; height: 42px; background: #007bff; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: 0.3s; font-size: 18px; }
+.social-icon:hover { background: #0056b3; transform: translateY(-3px) rotate(360deg); }
 
-.copyright { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #444; font-size: 14px; }
-.copyright i { margin-right: 5px; }
+/* Низ футера */
+.footer-bottom { text-align: center; padding-top: 25px; border-top: 1px solid #333; color: #777; font-size: 14px; }
+.footer-bottom i { margin-right: 5px; }
 
 /* Адаптивность */
 @media (max-width: 1199px) {
     .products-grid, .advantages-grid, .team-grid { grid-template-columns: repeat(2, 1fr); }
     .about-stats { grid-template-columns: repeat(2, 1fr); }
+    .footer-content { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 575px) {
@@ -131,7 +133,7 @@ footer { background: #222; color: #ccc; padding: 40px 0; margin-top: 60px; }
     .nav-menu { flex-direction: column; align-items: center; gap: 10px; }
     .hero h1 { font-size: 32px; }
     .products-grid, .advantages-grid, .team-grid, .about-stats { grid-template-columns: 1fr; }
-    .footer-content { flex-direction: column; text-align: center; }
+    .footer-content { grid-template-columns: 1fr; text-align: center; }
     .footer-section ul li { justify-content: center; }
     .social-links { justify-content: center; }
 }
