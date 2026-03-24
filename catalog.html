@@ -4,46 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore - Каталог</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">TechStore</a>
+            <a href="index.html" class="logo">
+                <img src="https://placehold.co/150x50/007bff/ffffff?text=TechStore" alt="TechStore Logo" class="logo-img">
+            </a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i> Каталог</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
                 </ul>
             </nav>
-            <div class="icons">🔍 🛒</div>
+            <div class="icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
         </div>
     </header>
 
     <main class="container">
-        <h2 class="section-title">Каталог товаров</h2>
+        <h2 class="section-title"><i class="fas fa-th-large"></i> Каталог товаров</h2>
+        
         <div class="products-grid">
-            <!-- 9 Товаров -->
-            <div class="product-card"><img src="https://placehold.co/400x300?text=Sony" class="product-img"><div class="product-info"><h3 class="product-title">Sony WH-1000XM5</h3><div class="product-price">34 990 ₽</div><div class="product-rating">★★★★★</div><button class="product-btn">В корзину</button></div></div>
-            <div class="product-card"><img src="https://placehold.co/400x300?text=iPhone" class="product-img"><div class="product-info"><h3 class="product-title">iPhone 17 Pro</h3><div class="product-price">149 990 ₽</div><div class="product-rating">★★★★★</div><button class="product-btn">В корзину</button></div></div>
-            <div class="product-card"><img src="https://placehold.co/400x300?text=MacBook" class="product-img"><div class="product-info"><h3 class="product-title">MacBook Pro 14</h3><div class="product-price">219 990 ₽</div><div class="product-rating">★★★★★</div><button class="product-btn">В корзину</button></div></div>
-            <div class="product-card"><img src="https://placehold.co/400x300?text=Watch" class="product-img"><div class="product-info"><h3 class="product-title">Apple Watch 10</h3><div class="product-price">49 990 ₽</div><div class="product-rating">★★★★☆</div><button class="product-btn">В корзину</button></div></div>
-            <div class="product-card"><img src="https://placehold.co/400x300?text=iPad" class="product-img"><div class="product-info"><h3 class="product-title">iPad Pro 12.9</h3><div class="product-price">129 990 ₽</div><div class="product-rating">★★★★★</div><button class="product-btn">В корзину</button></div></div>
-            <div class="product-card"><img src="https://placehold.co/400x300?text=PS5" class="product-img"><div class="product-info"><h3 class="product-title">PlayStation 5</h3><div class="product-price">69 990 ₽</div><div class="product-rating">★★★★★</div><button class="product-btn">В корзину</button></div></div>
-            <div class="product-card"><img src="https://placehold.co/400x300?text=JBL" class="product-img"><div class="product-info"><h3 class="product-title">JBL Charge 5</h3><div class="product-price">14 990 ₽</div><div class="product-rating">★★★★☆</div><button class="product-btn">В корзину</button></div></div>
-            <div class="product-card"><img src="https://placehold.co/400x300?text=GoPro" class="product-img"><div class="product-info"><h3 class="product-title">GoPro Hero 12</h3><div class="product-price">39 990 ₽</div><div class="product-rating">★★★★★</div><button class="product-btn">В корзину</button></div></div>
-            <div class="product-card"><img src="https://placehold.co/400x300?text=Kindle" class="product-img"><div class="product-info"><h3 class="product-title">Kindle Paperwhite</h3><div class="product-price">16 990 ₽</div><div class="product-rating">★★★★☆</div><button class="product-btn">В корзину</button></div></div>
+            <!-- 9 Товаров с иконками -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=Sony+WH" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Sony WH-1000XM5</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 34 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=iPhone+17" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">iPhone 17 Pro Max</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 149 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=MacBook" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">MacBook Pro 14"</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 219 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=Apple+Watch" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Apple Watch Series 10</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 49 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=iPad+Pro" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">iPad Pro 12.9"</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 129 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=PS5+Pro" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">PlayStation 5 Pro</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 69 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=JBL+Charge" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">JBL Charge 5</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 14 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=GoPro+12" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">GoPro Hero 12</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 39 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/333/fff?text=Kindle" alt="Товар" class="product-img">
+                <div class="product-info">
+                    <h3 class="product-title">Kindle Paperwhite</h3>
+                    <div class="product-price"><i class="fas fa-ruble-sign"></i> 16 990</div>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <button class="product-btn"><i class="fas fa-cart-plus"></i> В корзину</button>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section"><h4>TechStore</h4><p>Ваш надежный партнер.</p></div>
-                <div class="footer-section"><h4>Контакты</h4><ul><li>+7 (999) 000-00-00</li></ul></div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-store"></i> TechStore</h4>
+                    <p>Ваш надёжный партнёр.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-address-book"></i> Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (999) 000-00-00</li>
+                        <li><i class="fas fa-envelope"></i> info@techstore.ru</li>
+                    </ul>
+                </div>
             </div>
-            <div class="copyright">&copy; 2026 TechStore.</div>
+            <div class="copyright">
+                <i class="fas fa-copyright"></i> 2026 TechStore.
+            </div>
         </div>
     </footer>
 </body>
