@@ -4,78 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore - Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">TechStore</a>
+            <a href="index.html" class="logo">
+                <img src="https://placehold.co/150x50/007bff/ffffff?text=TechStore" alt="TechStore Logo" class="logo-img">
+            </a>
+            
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i> Каталог</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
                 </ul>
             </nav>
-            <div class="icons">🔍 🛒</div>
+            
+            <div class="icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Добро пожаловать в TechStore</h1>
+                <h1><i class="fas fa-bolt"></i> Добро пожаловать в TechStore</h1>
                 <p>Лучшая электроника по доступным ценам</p>
-                <a href="catalog.html" class="btn">Посмотреть каталог</a>
+                <a href="catalog.html" class="btn">
+                    <i class="fas fa-eye"></i> Посмотреть каталог
+                </a>
             </div>
         </section>
 
         <section class="container">
-            <h2 class="section-title">Популярные товары</h2>
+            <h2 class="section-title"><i class="fas fa-fire"></i> Популярные товары</h2>
             <div class="products-grid">
                 <!-- Товар 1 -->
                 <div class="product-card">
-                    <img src="https://placehold.co/400x300?text=Sony+Headphones" alt="Наушники" class="product-img">
+                    <img src="https://placehold.co/400x300/333/fff?text=Sony+WH-1000XM5" alt="Наушники Sony" class="product-img">
                     <div class="product-info">
                         <h3 class="product-title">Sony WH-1000XM5</h3>
-                        <div class="product-price">34 990 ₽</div>
-                        <div class="product-rating">★★★★★</div>
-                        <button class="product-btn">В корзину</button>
+                        <div class="product-price"><i class="fas fa-ruble-sign"></i> 34 990</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-text">(5.0)</span>
+                        </div>
+                        <button class="product-btn">
+                            <i class="fas fa-cart-plus"></i> В корзину
+                        </button>
                     </div>
                 </div>
+
                 <!-- Товар 2 -->
                 <div class="product-card">
-                    <img src="https://placehold.co/400x300?text=iPhone+17" alt="Смартфон" class="product-img">
+                    <img src="https://placehold.co/400x300/333/fff?text=iPhone+17+Pro" alt="iPhone 17 Pro" class="product-img">
                     <div class="product-info">
                         <h3 class="product-title">iPhone 17 Pro Max</h3>
-                        <div class="product-price">149 990 ₽</div>
-                        <div class="product-rating">★★★★★</div>
-                        <button class="product-btn">В корзину</button>
+                        <div class="product-price"><i class="fas fa-ruble-sign"></i> 149 990</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="rating-text">(4.9)</span>
+                        </div>
+                        <button class="product-btn">
+                            <i class="fas fa-cart-plus"></i> В корзину
+                        </button>
                     </div>
                 </div>
+
                 <!-- Товар 3 -->
                 <div class="product-card">
-                    <img src="https://placehold.co/400x300?text=MacBook+Pro" alt="Ноутбук" class="product-img">
+                    <img src="https://placehold.co/400x300/333/fff?text=MacBook+Pro" alt="MacBook Pro" class="product-img">
                     <div class="product-info">
                         <h3 class="product-title">MacBook Pro 14"</h3>
-                        <div class="product-price">219 990 ₽</div>
-                        <div class="product-rating">★★★★★</div>
-                        <button class="product-btn">В корзину</button>
+                        <div class="product-price"><i class="fas fa-ruble-sign"></i> 219 990</div>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="rating-text">(5.0)</span>
+                        </div>
+                        <button class="product-btn">
+                            <i class="fas fa-cart-plus"></i> В корзину
+                        </button>
                     </div>
                 </div>
             </div>
             <div style="text-align: center;">
-                <a href="catalog.html" class="btn">Смотреть все</a>
+                <a href="catalog.html" class="btn">
+                    <i class="fas fa-th"></i> Смотреть все товары
+                </a>
             </div>
         </section>
 
         <section class="container">
-            <h2 class="section-title">Наши преимущества</h2>
+            <h2 class="section-title"><i class="fas fa-award"></i> Наши преимущества</h2>
             <div class="advantages-grid">
-                <div class="advantage-item"><div class="advantage-icon">🚚</div><h3>Доставка</h3></div>
-                <div class="advantage-item"><div class="advantage-icon">🛡️</div><h3>Гарантия</h3></div>
-                <div class="advantage-item"><div class="advantage-icon">💳</div><h3>Оплата</h3></div>
-                <div class="advantage-item"><div class="advantage-icon">🎧</div><h3>Поддержка</h3></div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Бесплатная доставка</h3>
+                    <p>При заказе от 5000 ₽</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Безопасная оплата</h3>
+                    <p>Защищённые транзакции</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Гарантия качества</h3>
+                    <p>Официальная гарантия</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Всегда на связи</p>
+                </div>
             </div>
         </section>
     </main>
@@ -83,11 +152,36 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section"><h4>TechStore</h4><p>Ваш надежный партнер.</p></div>
-                <div class="footer-section"><h4>Контакты</h4><ul><li>+7 (999) 000-00-00</li><li>info@techstore.ru</li></ul></div>
-                <div class="footer-section"><h4>Мы в соцсетях</h4><ul><li>Telegram</li><li>VK</li></ul></div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-store"></i> TechStore</h4>
+                    <p>Ваш надёжный партнёр в мире электроники с 2020 года.</p>
+                    <div class="social-links">
+                        <!-- Иконки соцсетей -->
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-address-book"></i> Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (999) 000-00-00</li>
+                        <li><i class="fas fa-envelope"></i> info@techstore.ru</li>
+                        <li><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Техники, 1</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-clock"></i> Режим работы</h4>
+                    <ul>
+                        <li>Пн-Пт: 9:00 - 21:00</li>
+                        <li>Сб-Вс: 10:00 - 20:00</li>
+                    </ul>
+                </div>
             </div>
-            <div class="copyright">&copy; 2026 TechStore. Все права защищены.</div>
+            <div class="copyright">
+                <i class="fas fa-copyright"></i> 2026 TechStore. Все права защищены.
+            </div>
         </div>
     </footer>
 </body>
