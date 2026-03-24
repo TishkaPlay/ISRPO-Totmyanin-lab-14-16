@@ -4,68 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore - О нас</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container nav-wrapper">
-            <a href="index.html" class="logo">TechStore</a>
+            <a href="index.html" class="logo">
+                <img src="https://placehold.co/150x50/007bff/ffffff?text=TechStore" alt="TechStore Logo" class="logo-img">
+            </a>
             <nav>
                 <ul class="nav-menu">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                    <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i> Каталог</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> О нас</a></li>
                 </ul>
             </nav>
-            <div class="icons">🔍 🛒</div>
+            <div class="icons">
+                <a href="#" class="icon-link"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="#" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
         </div>
     </header>
 
     <main class="container">
-        <h2 class="section-title">О нас</h2>
-        <div style="background: #fff; padding: 40px; border-radius: 8px; margin-bottom: 40px;">
-            <h3>Наша миссия</h3>
-            <p>Мы делаем технологии доступными. Работаем с 2020 года.</p>
-            <br>
-            <h3>Достижения</h3>
-            <ul>
-                <li>✅ 50 000 клиентов</li>
-                <li>✅ 5 лет на рынке</li>
-            </ul>
+        <h2 class="section-title"><i class="fas fa-users"></i> О нас</h2>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <h3><i class="fas fa-bullseye"></i> Наша миссия</h3>
+                <p>Мы стремимся сделать передовые технологии доступными для каждого. TechStore работает на рынке электроники с 2020 года, предлагая только оригинальную продукцию с официальной гарантией.</p>
+            </div>
+            
+            <div class="about-stats">
+                <div class="stat-item">
+                    <i class="fas fa-users stat-icon"></i>
+                    <div class="stat-number">50 000+</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt stat-icon"></i>
+                    <div class="stat-number">5 лет</div>
+                    <div class="stat-label">Успешной работы</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-smile stat-icon"></i>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Положительных отзывов</div>
+                </div>
+            </div>
         </div>
 
-        <h3 class="section-title">Наша команда</h3>
+        <h3 class="section-title"><i class="fas fa-user-tie"></i> Наша команда</h3>
         <div class="team-grid">
+            <!-- Член команды 1 -->
             <div class="team-card">
-                <img src="https://placehold.co/150x150?text=CEO" alt="CEO" class="team-img">
-                <h4>Алексей Петров</h4><p>Директор</p>
+                <!-- ЗАМЕНИТЕ: src на фото сотрудника -->
+                <img src="https://placehold.co/150x150/007bff/fff?text=АП" alt="Алексей Петров" class="team-img">
+                <h4>Алексей Петров</h4>
+                <p class="team-position"><i class="fas fa-crown"></i> Генеральный директор</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
+            
+            <!-- Член команды 2 -->
             <div class="team-card">
-                <img src="https://placehold.co/150x150?text=CTO" alt="CTO" class="team-img">
-                <h4>Мария Иванова</h4><p>Тех. директор</p>
+                <img src="https://placehold.co/150x150/007bff/fff?text=МИ" alt="Мария Иванова" class="team-img">
+                <h4>Мария Иванова</h4>
+                <p class="team-position"><i class="fas fa-laptop-code"></i> Технический директор</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
+            
+            <!-- Член команды 3 -->
             <div class="team-card">
-                <img src="https://placehold.co/150x150?text=Mgr" alt="Manager" class="team-img">
-                <h4>Дмитрий Сидоров</h4><p>Менеджер</p>
+                <img src="https://placehold.co/150x150/007bff/fff?text=ДС" alt="Дмитрий Сидоров" class="team-img">
+                <h4>Дмитрий Сидоров</h4>
+                <p class="team-position"><i class="fas fa-chart-line"></i> Руководитель отдела продаж</p>
+                <div class="team-social">
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
 
-        <h3 class="section-title">Почему мы</h3>
+        <h3 class="section-title"><i class="fas fa-trophy"></i> Почему выбирают нас</h3>
         <div class="advantages-grid">
-            <div class="advantage-item"><div class="advantage-icon">🏆</div><h3>Лидеры</h3></div>
-            <div class="advantage-item"><div class="advantage-icon">🤝</div><h3>Честность</h3></div>
-            <div class="advantage-item"><div class="advantage-icon">⚡</div><h3>Скорость</h3></div>
-            <div class="advantage-item"><div class="advantage-icon">💎</div><h3>Сервис</h3></div>
+            <div class="advantage-item">
+                <div class="advantage-icon"><i class="fas fa-trophy"></i></div>
+                <h3>Лидеры рынка</h3>
+                <p>Топ-3 магазина электроники</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon"><i class="fas fa-handshake"></i></div>
+                <h3>Честные цены</h3>
+                <p>Без скрытых платежей</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon"><i class="fas fa-shipping-fast"></i></div>
+                <h3>Быстрая доставка</h3>
+                <p>От 1 дня по городу</p>
+            </div>
+            <div class="advantage-item">
+                <div class="advantage-icon"><i class="fas fa-gem"></i></div>
+                <h3>Премиум сервис</h3>
+                <p>Индивидуальный подход</p>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section"><h4>TechStore</h4><p>Ваш надежный партнер.</p></div>
-                <div class="footer-section"><h4>Контакты</h4><ul><li>+7 (999) 000-00-00</li></ul></div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-store"></i> TechStore</h4>
+                    <p>Ваш надёжный партнёр.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4><i class="fas fa-address-book"></i> Контакты</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +7 (999) 000-00-00</li>
+                        <li><i class="fas fa-envelope"></i> info@techstore.ru</li>
+                    </ul>
+                </div>
             </div>
-            <div class="copyright">&copy; 2026 TechStore.</div>
+            <div class="copyright">
+                <i class="fas fa-copyright"></i> 2026 TechStore.
+            </div>
         </div>
     </footer>
 </body>
